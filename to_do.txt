@@ -1,0 +1,13 @@
+1. validateList - find out errors
+2. Lists.deny - according to errors from point 1
+3. check(listAttributes, according to what can go wrong)
+4. Check if listSameTitleUser works
+5. Additional list attributes?
+6. validateItem - find out errors
+7. Items.deny - according to errors from point 6
+8. check(itemAttributes, according to what can go wrong)
+9. itemSameTitle modify
+10. // figure out which list you are adding to
+			listID: String, (how?)
+11.Additional item attributes?
+12. // *** UPDATE THE LIST ACCORDING TO NEW DATA *** - check to see if this works on either.
