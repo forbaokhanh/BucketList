@@ -1,0 +1,15 @@
+<template name="goalItem">
+  <div class="goal">
+    <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆</a>
+    <div class="goal-content">
+      <h3><a href="{{url}}">{{title}}</a></h3>
+      <p>
+        {{pluralize votes "Vote"}},
+        submitted by {{author}},
+        <a href="{{pathFor 'itemPage'}}">{{pluralize commentsCount "comment"}}</a>
+        {{#if ownitem}}<a href="{{pathFor 'itemEdit'}}">Edit</a>{{/if}}
+      </p>
+    </div>
+    <a href="{{pathFor 'itemPage'}}" class="discuss btn btn-default">Discuss</a>
+  </div>
+</template>

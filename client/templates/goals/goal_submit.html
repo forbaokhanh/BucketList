@@ -1,0 +1,40 @@
+<template name="goalSubmit">
+  <form class="main form page">
+    <div class="form-group {{errorClass 'title'}}">
+      <label class="control-label" for="title">Title</label>
+      <div class="controls">
+          <input name="title" id="title" type="text" value="" placeholder="Name your goal" class="form-control"/>
+          <span class="help-block">{{errorMessage 'title'}}</span>
+      </div>
+    </div>
+    <div class="form-group"> <!--{{errorClass 'dueDate'}}-->
+      <label class="control-label" for="dueDate">Due Date</label>
+      <div class="controls">
+          <input id="dueDate" type="text" placeholder="Goal without target date is a dream" class="form-control hasDatepicker" name="dueDate">
+          <!-- <span class="help-block">{{errorMessage 'dueDate'}}</span> -->
+      </div>
+    </div>
+    <div class="form-group {{errorClass 'notes'}}">
+      <label class="control-label" for="notes">Notes</label>
+      <div class="controls">
+          <input name="notes" id="notes" type="text" value="" placeholder="Type your story here" class="form-control"/>
+          <span class="help-block">{{errorMessage 'notes'}}</span>
+      </div>
+    </div>
+    <div class="form-group"> <!-- {{errorClass 'url'}} -->
+      <label class="control-label" for="url">URL</label>
+      <div class="controls">
+          <input name="url" id="url" type="text" value="" placeholder="Your URL" class="form-control"/>
+          <!-- <span class="help-block">{{errorMessage 'url'}}</span> -->
+      </div>
+    </div>
+    <div class="form-group"> <!--{{errorClass 'completed'}}-->
+      <label class="control-label" for="completed">Have you already accomplished this goal?</label>
+      <div class="controls">
+          <input type="checkbox" name="completed" id="id_completed">
+          <!-- <span class="help-block">{{errorMessage 'completed'}}</span> -->
+      </div>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+</template>

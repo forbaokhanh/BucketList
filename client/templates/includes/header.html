@@ -12,15 +12,12 @@
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
-          <li class="{{activeRouteClass 'home' 'newPosts'}}">
-            <a href="{{pathFor 'newPosts'}}">New</a>
-          </li>
           <li class="{{activeRouteClass  'bestPosts'}}">
-            <a href="{{pathFor 'bestPosts'}}">Best</a>
+            <a href="{{pathFor 'bestGoals'}}">Popular</a>
           </li>
           {{#if currentUser}}
-            <li class="{{activeRouteClass 'postSubmit'}}">
-              <a href="{{pathFor 'postSubmit'}}">New List</a>
+            <li class="{{activeRouteClass 'goalSubmit'}}">
+              <a href="{{pathFor 'goalSubmit'}}">New Goal</a>
             </li>
           {{/if}}
         </ul>
